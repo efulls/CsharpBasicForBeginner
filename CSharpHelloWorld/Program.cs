@@ -6,13 +6,15 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            var a = 10;
-            var b = 3;
+            var a = 1;
+            var b = 2;
+            var c = 3;
 
+            //Jika Semuanya Memenuhi Kondisi
+            Console.WriteLine(c > b && c < a);
+            //Jika Salah satu memenuhi kondisi
+            Console.WriteLine(c > b || c < a);
 
-            //Console.WriteLine(a/b);
-            //Jika ingin hasilnya float maka tambahkanlah operator float
-            Console.WriteLine((float)a / (float)b);
         }
     }
 }
