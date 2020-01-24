@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpHelloWorld.Math;
+using System;
 
 namespace CSharpHelloWorld
 {
@@ -6,15 +7,14 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            var a = 1;
-            var b = 2;
-            var c = 3;
+            var john = new Person();
+            john.FirstName = "John";
+            john.LastName = "Kenedy";
+            john.Introduce();
 
-            //Jika Semuanya Memenuhi Kondisi
-            Console.WriteLine(c > b && c < a);
-            //Jika Salah satu memenuhi kondisi
-            Console.WriteLine(c > b || c < a);
-
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 5);
+            Console.WriteLine(result);
         }
     }
 }
