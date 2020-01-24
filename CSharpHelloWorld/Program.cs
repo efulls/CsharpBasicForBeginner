@@ -3,25 +3,31 @@ using System;
 
 namespace CSharpHelloWorld
 {
+    public enum ShippingMethod
+    {
+        RegularAirmail = 1,
+        RegisteredAirMail = 2,
+        Express = 3
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            var firstName = "Saeful";
-            var lastName = "Mahmud";
+            //Menampilkan Enum berdasarkan  MethodName
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
 
-            var fullName = firstName + " " +lastName;
+            //Menampilkan Method Name Berdasarkan Enum
+            var methodId = 3;
+            Console.WriteLine((ShippingMethod)methodId);
 
-            var myFullName = string.Format("My name is {0} {1}", firstName, lastName);
+            //Menampilkan Enum menggunakan ToString
+            Console.WriteLine(method.ToString());
 
-            var names = new string[3] { "John", "Jack", "Marry" };
-            var formattedNames = string.Join(",", names);
-
-            var text = @"Hi John
-Look into the following paths
-c:\folder1\folder2
-c:\folder3\folder4";
-            Console.WriteLine(text);
+            //Memparsing Method 
+            var methodName = "Express";
+            var shippingMethod = (ShippingMethod)Enum.Parse(typeof(ShippingMethod), methodName);
+            Console.WriteLine(shippingMethod);
         }
     }
 }
