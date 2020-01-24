@@ -6,15 +6,9 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            //Penulisan yang benar
-            byte b = 1;
-            int i = b;
+            var number = "1234";
+            int i = Convert.ToInt32(number);
             Console.WriteLine(i);
-
-
-            //Penulisan yang salah seperti ini, integer tidak bisa dikonversi ke byte 
-            //int b = 1;
-            //byte i = b;
         }
     }
 }
