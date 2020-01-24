@@ -6,21 +6,13 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            try
-            {
+            var a = 10;
+            var b = 3;
 
-                //var number = "1234";
-                //int b = Convert.ToByte(number);
-                //Console.WriteLine(b);
-                string str = "true";
-                bool b = Convert.ToBoolean(str);
-                Console.WriteLine(b);
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Jumlahnya tidak bisa dikonversi ke byte");
 
-            }
+            //Console.WriteLine(a/b);
+            //Jika ingin hasilnya float maka tambahkanlah operator float
+            Console.WriteLine((float)a / (float)b);
         }
     }
 }
