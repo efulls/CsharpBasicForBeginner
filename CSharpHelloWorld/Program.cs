@@ -6,9 +6,15 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            const float Pi = 3.14f;
-            //Artinya, Pi tidak bisa diubah nilainya karena bertype constant. Angka yg Pasti
-            //Pi = 1;
+            //Penulisan yang benar
+            byte b = 1;
+            int i = b;
+            Console.WriteLine(i);
+
+
+            //Penulisan yang salah seperti ini, integer tidak bisa dikonversi ke byte 
+            //int b = 1;
+            //byte i = b;
         }
     }
 }
