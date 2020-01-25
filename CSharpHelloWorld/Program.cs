@@ -36,8 +36,11 @@ namespace CSharpHelloWorld
             //var DString = new DemoString();
             //DString.SampleString();
             
-            var DSummerize = new DemoSummarisingText();
-            DSummerize.SampleSumerize();
+            //var DSummerize = new DemoSummarisingText();
+            //DSummerize.SampleSumerize();
+
+            var DStringBuilder = new DemoStringBuilder();
+            DStringBuilder.SampleStringBuilder();
         }
 
     }
