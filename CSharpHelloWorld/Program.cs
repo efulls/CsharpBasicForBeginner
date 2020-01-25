@@ -7,69 +7,26 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            #region Demo For Loops
+            #region Random Class Example 1
+            var random = new Random();
+            //for (var i = 0; i < 10; i++)
+            //    /*Console.WriteLine(random.Next(1,10));*/
 
-            for (var i = 1; i<= 10; i++)
-            {
-                if(i%2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            //    Console.Write((char)random.Next(97, 122));
+            //Console.WriteLine();
 
-          for (var i = 10; i >= 1; i--)
-            {
-                if(i%2 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-            }
+            const int passwordLength = 10;
 
-            #endregion
+            var buffer = new char[passwordLength];
+            for (var i = 0; i < passwordLength; i++)
+                buffer[i] = (char)('a' + random.Next(0, 26));
 
-            #region Foreach Loops
-            var name = "John Legend";
+            var password = new string(buffer);
 
-            for (var i = 0; i < name.Length; i++)
-            {
-                Console.WriteLine(name[i]);
-            }
+            Console.WriteLine(password);
 
-            foreach(var character in name)
-            {
-                Console.WriteLine(character);
-            }
 
-            //--------------------------------------
-            var numbers = new int[] { 1, 2, 3, 4 };
-            foreach (var number in numbers)
-            {
-                Console.WriteLine(number);
-            }
-            #endregion
 
-            #region While Loops
-            while (true)
-            {
-                Console.WriteLine("Type your name: ");
-                var input = Console.ReadLine();
-
-                //Cara Pertama
-                //if (String.IsNullOrWhiteSpace(input))
-                //    break;
-
-                //Console.WriteLine("@Echo: " + input);
-
-                //Cara Kedua
-                if (!String.IsNullOrWhiteSpace(input))
-                {
-                    Console.WriteLine("@Echo: " + input);
-                    continue;
-                }
-                    break;
-
-            }
-            
             #endregion
 
 
