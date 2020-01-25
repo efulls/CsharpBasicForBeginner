@@ -53,6 +53,7 @@
     <Compile Include="Exercises\Loops.cs" />
     <Compile Include="Demo\DemoArray.cs" />
     <Compile Include="Demo\DemoList.cs" />
+    <Compile Include="Exercises\Strings.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
