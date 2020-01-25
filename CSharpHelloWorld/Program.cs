@@ -27,8 +27,11 @@ namespace CSharpHelloWorld
             //ExercistList.Exercise5();
 
 
-            var DDatetime = new DemoDateTime();
-            DDatetime.DateTimeSample();
+            //var DDatetime = new DemoDateTime();
+            //DDatetime.DateTimeSample();
+
+            var DTimeSpan = new DemoTimeSpan();
+            DTimeSpan.SampleTimeSpan();
         }
 
     }
