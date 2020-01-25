@@ -1,4 +1,4 @@
-﻿using CSharpHelloWorld.ControlFlow;
+﻿using CSharpHelloWorld.Exercises;
 using CSharpHelloWorld.Demo;
 using System;
 using System.Collections.Generic;
@@ -19,8 +19,12 @@ namespace CSharpHelloWorld
             Darray.ArraySample();
              */
 
-            var DList = new DemoList();
-            DList.ListSample();
+            //var DList = new DemoList();
+            //DList.ListSample();
+
+
+            var ExercistList = new Lists();
+            ExercistList.Exercise5();
         }
 
     }
