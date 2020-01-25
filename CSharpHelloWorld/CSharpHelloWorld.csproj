@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Demo\DemoDateTime.cs" />
+    <Compile Include="Demo\DemoDirectory.cs" />
     <Compile Include="Demo\DemoFileAndFileInfo.cs" />
     <Compile Include="Demo\DemoString.cs" />
     <Compile Include="Demo\DemoStringBuilder.cs" />

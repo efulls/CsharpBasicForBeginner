@@ -43,8 +43,11 @@ namespace CSharpHelloWorld
             //DStringBuilder.SampleStringBuilder();
 
 
-            var ExercistString = new Strings();
-            ExercistString.Exercise5();
+            //var ExercistString = new Strings();
+            //ExercistString.Exercise5();
+
+            var DDirectory = new DemoDirectory();
+            DDirectory.SampleDirectory();
         }
 
     }
