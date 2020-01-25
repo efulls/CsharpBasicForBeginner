@@ -46,8 +46,12 @@ namespace CSharpHelloWorld
             //var ExercistString = new Strings();
             //ExercistString.Exercise5();
 
-            var DDirectory = new DemoDirectory();
-            DDirectory.SampleDirectory();
+            //var DDirectory = new DemoDirectory();
+            //DDirectory.SampleDirectory();
+
+
+            var DPath = new DemoPath();
+            DPath.SamplePath();
         }
 
     }
