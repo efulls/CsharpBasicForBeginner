@@ -32,10 +32,12 @@ namespace CSharpHelloWorld
 
             //var DTimeSpan = new DemoTimeSpan();
             //DTimeSpan.SampleTimeSpan();
-
-
-            var DString = new DemoString();
-            DString.SampleString();
+            
+            //var DString = new DemoString();
+            //DString.SampleString();
+            
+            var DSummerize = new DemoSummarisingText();
+            DSummerize.SampleSumerize();
         }
 
     }
