@@ -1,6 +1,7 @@
 ﻿using CSharpHelloWorld.ControlFlow;
 using CSharpHelloWorld.Demo;
 using System;
+using System.Collections.Generic;
 
 namespace CSharpHelloWorld
 {
@@ -18,7 +19,8 @@ namespace CSharpHelloWorld
             Darray.ArraySample();
              */
 
-
+            var DList = new DemoList();
+            DList.ListSample();
         }
 
     }

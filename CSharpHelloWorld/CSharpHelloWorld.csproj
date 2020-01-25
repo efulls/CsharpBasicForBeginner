@@ -46,6 +46,7 @@
     <Compile Include="ControlFlow\Conditionals.cs" />
     <Compile Include="ControlFlow\Loops.cs" />
     <Compile Include="Demo\DemoArray.cs" />
+    <Compile Include="Demo\DemoList.cs" />
     <Compile Include="Math\Calculator.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
