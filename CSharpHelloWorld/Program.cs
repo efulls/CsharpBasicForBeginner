@@ -7,58 +7,73 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            int hour = 19;
+            #region Demo For Loops
+
+            for (var i = 1; i<= 10; i++)
+            {
+                if(i%2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+          for (var i = 10; i >= 1; i--)
+            {
+                if(i%2 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            #endregion
+
+            #region Foreach Loops
+            var name = "John Legend";
+
+            for (var i = 0; i < name.Length; i++)
+            {
+                Console.WriteLine(name[i]);
+            }
+
+            foreach(var character in name)
+            {
+                Console.WriteLine(character);
+            }
+
+            //--------------------------------------
+            var numbers = new int[] { 1, 2, 3, 4 };
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+            #endregion
+
+            #region While Loops
+            while (true)
+            {
+                Console.WriteLine("Type your name: ");
+                var input = Console.ReadLine();
+
+                //Cara Pertama
+                //if (String.IsNullOrWhiteSpace(input))
+                //    break;
+
+                //Console.WriteLine("@Echo: " + input);
+
+                //Cara Kedua
+                if (!String.IsNullOrWhiteSpace(input))
+                {
+                    Console.WriteLine("@Echo: " + input);
+                    continue;
+                }
+                    break;
+
+            }
             
-            if (hour > 0 && hour < 12)
-            {
-                Console.WriteLine("It's morning.");
-            }       
-            else if (hour >= 12 && hour < 18)
-            {
-                Console.WriteLine("It's afternoon.");
-            }
-            else
-            {
-                Console.WriteLine("It's evening.");
-            }
-
-
-
-
-
-            bool isGoldCustomer = true;
-
-            //float price;
-            //if (isGoldCustomer)
-            //    price = 19.95f;
-            //else
-            //    price = 29.95f;
-
-            float price = (isGoldCustomer) ? 19.95f : 29.95f;
-
-            Console.WriteLine(price);
-
-
-
-
-
-            var season = Season.Autumn;
-            switch (season)
-            {
-                case Season.Autumn:
-                    Console.WriteLine("It's Autumn an beautiful season.");
-                    break;
-                case Season.Summer:
-                    Console.WriteLine("It's Perfect to go to beach.");
-                    break;
-                default:
-                    Console.WriteLine("i dont understand that season!");
-                    break;
-            }
-
+            #endregion
 
 
         }
-        
+
     }
 }
