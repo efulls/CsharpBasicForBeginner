@@ -23,8 +23,12 @@ namespace CSharpHelloWorld
             //DList.ListSample();
 
 
-            var ExercistList = new Lists();
-            ExercistList.Exercise5();
+            //var ExercistList = new Lists();
+            //ExercistList.Exercise5();
+
+
+            var DDatetime = new DemoDateTime();
+            DDatetime.DateTimeSample();
         }
 
     }

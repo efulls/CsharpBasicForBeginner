@@ -43,7 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo\Lists.cs" />
+    <Compile Include="Demo\DemoDateTime.cs" />
+    <Compile Include="Exercises\Lists.cs" />
     <Compile Include="Exercises\Conditionals.cs" />
     <Compile Include="Exercises\Loops.cs" />
     <Compile Include="Demo\DemoArray.cs" />
