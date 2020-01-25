@@ -7,29 +7,39 @@ namespace CSharpHelloWorld
     {
         static void Main(string[] args)
         {
-            #region Random Class Example 1
-            var random = new Random();
-            //for (var i = 0; i < 10; i++)
-            //    /*Console.WriteLine(random.Next(1,10));*/
+            var numbers = new[] { 1, 2, 5, 4, 20, 15, 33 };
 
-            //    Console.Write((char)random.Next(97, 122));
-            //Console.WriteLine();
+            //length
+            Console.WriteLine("Length: " + numbers.Length);
 
-            const int passwordLength = 10;
+            //Clear from array 1 - 3
+            Array.Clear(numbers, 1, 3);
 
-            var buffer = new char[passwordLength];
-            for (var i = 0; i < passwordLength; i++)
-                buffer[i] = (char)('a' + random.Next(0, 26));
+            Console.WriteLine("Effect of Clear()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
 
-            var password = new string(buffer);
+            //Copy()
+            int[] another = new int[3];
+            Array.Copy(numbers, another, 3);
 
-            Console.WriteLine(password);
+            Console.WriteLine("Efect Of Copy()");
+            foreach (var n in another)
+                Console.WriteLine(n);
 
+            //Short()
+            Array.Sort(numbers);
 
+            Console.WriteLine("Efect od sort()");
+            foreach (var n in numbers)
+                Console.WriteLine(n);
 
-            #endregion
+            //Reverse()
+            Array.Reverse(numbers);
 
-
+            Console.WriteLine("Effect of Referse()");
+            foreach(var n in numbers)
+                Console.WriteLine(n);
         }
 
     }
