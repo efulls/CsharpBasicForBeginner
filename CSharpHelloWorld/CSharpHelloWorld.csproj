@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Demo\DemoDateTime.cs" />
+    <Compile Include="Demo\DemoString.cs" />
     <Compile Include="Demo\DemoTimeSpan.cs" />
     <Compile Include="Exercises\Lists.cs" />
     <Compile Include="Exercises\Conditionals.cs" />

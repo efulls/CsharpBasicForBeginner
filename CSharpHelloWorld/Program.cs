@@ -30,8 +30,12 @@ namespace CSharpHelloWorld
             //var DDatetime = new DemoDateTime();
             //DDatetime.DateTimeSample();
 
-            var DTimeSpan = new DemoTimeSpan();
-            DTimeSpan.SampleTimeSpan();
+            //var DTimeSpan = new DemoTimeSpan();
+            //DTimeSpan.SampleTimeSpan();
+
+
+            var DString = new DemoString();
+            DString.SampleString();
         }
 
     }
